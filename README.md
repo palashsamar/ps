@@ -1,2 +1,0 @@
-# ps
-Created with CodeSandbox
