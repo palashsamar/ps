@@ -1,6 +1,6 @@
 import React from "react";
 
-class Counter extends React.Component {
+class Decrement extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -8,9 +8,9 @@ class Counter extends React.Component {
     };
   }
 
-  incOne() {
+  DesOne() {
     this.setState({
-      age: this.state.age + 1
+      age: this.state.age - 1
     });
     this.props.changecounter(this.state.age);
   }
@@ -18,10 +18,10 @@ class Counter extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={() => this.incOne()}>+1</button>
+        <button onClick={() => this.DesOne()}>-1</button>
       </div>
     );
   }
 }
 
-export default Counter;
+export default Decrement;
